@@ -3,7 +3,7 @@ from utils.qa_logic import generate_summary, answer_question, generate_logic_que
 import os
 from PIL import Image
 
-# Custom CSS for styling
+
 st.markdown("""
     <style>
         body {
@@ -96,14 +96,14 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-# Title and Introduction
+
 st.title("Smart Research Assistant")
 st.markdown("""
     This AI assistant helps you quickly analyze and summarize long documents such as research papers, legal files, or technical manuals.
     Simply upload your document, ask questions, or challenge yourself with comprehension questions.
     """)
 
-# Upload section with border
+
 st.markdown('<div class="section-title">Upload Document</div>', unsafe_allow_html=True)
 uploaded_file = st.file_uploader("Upload a PDF or TXT file", type=["pdf", "txt"])
 
