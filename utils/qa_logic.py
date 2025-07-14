@@ -1,7 +1,6 @@
 import sys
 import os
 
-# Add the parent directory to the system path to make 'mynk' package discoverable
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from utils.gemini_client import gemini_ask
